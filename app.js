@@ -72,7 +72,10 @@ function createDogCard(dog) {
 
 	const card = `
   	<div class="card-conainer">
-	  <div class="card">
+	  <div class="card card-hover position-relative">
+	 <div class="edit">
+	 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary z-3">Editar</span>
+	 </div>
 	  <img class="card-img-top " src="${dog.img}">
 		   <div class="card-body">
 			  <h2 class="card-text">${dog.name}</h2>
@@ -94,20 +97,20 @@ dogs.forEach((dog) => {
 const addMascot = document.getElementById('addMascot');
 
 addMascot.addEventListener('click', () => {
-  const name = document.getElementById('nombreDog').value;
-  const telefono = document.getElementById('apellidoDog').value;
-  const pais = document.getElementById('paisDog').value;
-  const descripcion = document.getElementById('message-text-Dog').value;
+	const name = document.getElementById('nombreDog').value;
+	const telefono = document.getElementById('apellidoDog').value;
+	const pais = document.getElementById('paisDog').value;
+	const descripcion = document.getElementById('message-text-Dog').value;
 
-  const newDog = {
-    img: './imagenes/perro5.jpg',
-    name: name,
-    telefono: telefono,
-    pais: pais,
-    descripcion: descripcion,
-    id: dogs.length + 1,
-  };
+	const newDog = {
+		img: './imagenes/perro5.jpg',
+		name: name,
+		telefono: telefono,
+		pais: pais,
+		descripcion: descripcion,
+		id: dogs.length + 1,
+	};
 
-  dogs.push(newDog);
-  createDogCard(newDog);
+	dogs.push(newDog);
+	createDogCard(newDog);
 });

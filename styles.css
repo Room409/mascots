@@ -8,3 +8,11 @@
     cursor: pointer;
     color: antiquewhite;
 }
+
+.edit{
+    display: none;
+}
+
+.card-hover:hover .edit{
+    display: block;
+}
