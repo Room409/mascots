@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section class="container border border-black my-4 p-0">
+        <header class="d-flex justify-content-between align-items-center bg-primary p-3 text-white">
+            <h1 class="fs-2 fw-semibold">Dog Crud</h1>
+            <p class="fs-3 fw-semibold m-0" id="addDog" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">Agregar mascota</p>
+        </header>
+        <div class='cards-container p-4'>
+        </div>
+    </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar mascota</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class=" col-12 col-md-6 mb-3">
+                                <input class="form-control" type="text" placeholder="Nombre" id="nombreDog">
+                            </div>
+                            <div class=" col-12 col-md-6 mb-3">
+                                <input class="form-control" type="text" placeholder="Apellildo" id="apellidoDog">
+                            </div>
+                            <div class=" col-12 col-md-6 mb-3">
+                                <input class="form-control" type="text" placeholder="raza" id="razaDog">
+                            </div>
+                            <div class=" col-12 col-md-6 mb-3">
+                                <input class="form-control" type="number" placeholder="Telefono" id="telefonoDog">
+                            </div>
+                            <div class=" col-12 col-md-6 mb-3">
+                                <input class="form-control" type="text" placeholder="Pais" id="paisDog">
+                            </div>
+                            <div class=" col-12 col-md-6 mb-3">
+                                <input class="form-control" type="text" placeholder="URL de fotografia"id="fotoDog">
+                            </div>
+                            <div class=" col-12 ">
+                                <textarea class="form-control" placeholder="Sobre el/ella" id="message-text-Dog"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="addMascot">Agregar mascota</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
