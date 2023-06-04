@@ -22,7 +22,7 @@
         </div>
     </section>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -32,15 +32,9 @@
 
                 <div class="modal-body">
                     <form>
-                        <div class="row">
+                        <div class="row ">
                             <div class=" col-12 col-md-6 mb-3">
                                 <input class="form-control" type="text" placeholder="Nombre" id="nombreDog">
-                            </div>
-                            <div class=" col-12 col-md-6 mb-3">
-                                <input class="form-control" type="text" placeholder="Apellildo" id="apellidoDog">
-                            </div>
-                            <div class=" col-12 col-md-6 mb-3">
-                                <input class="form-control" type="text" placeholder="raza" id="razaDog">
                             </div>
                             <div class=" col-12 col-md-6 mb-3">
                                 <input class="form-control" type="number" placeholder="Telefono" id="telefonoDog">
@@ -48,11 +42,12 @@
                             <div class=" col-12 col-md-6 mb-3">
                                 <input class="form-control" type="text" placeholder="Pais" id="paisDog">
                             </div>
-                            <div class=" col-12 col-md-6 mb-3">
-                                <input class="form-control" type="text" placeholder="URL de fotografia"id="fotoDog">
+                            <div class=" col-12 col-md-6 mb-3 mx-auto">
+                                <input class="form-control" type="file" placeholder="URL de fotografia" id="fotoDog">
                             </div>
                             <div class=" col-12 ">
-                                <textarea class="form-control" placeholder="Sobre el/ella" id="message-text-Dog"></textarea>
+                                <textarea class="form-control" placeholder="Sobre el/ella"
+                                    id="message-text-Dog"></textarea>
                             </div>
                         </div>
                     </form>
@@ -67,9 +62,49 @@
 
 
 
-
-
-
+<!--SEGUNDO MODAL-->
+    <section>
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="mb-2 col-12 col-md-6">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="email" class="form-control" id="nombre">
+                                </div>
+                                <div class="mb-2 col-12 col-md-6">
+                                    <label for="description" class="form-label">Descripcion</label>
+                                    <input type="email" class="form-control" id="descriptionEdit">
+                                </div>
+                                <div class="mb-2 col-12 col-md-6">
+                                    <label for="telefono" class="form-label">Telefono</label>
+                                    <input type="email" class="form-control" id="telefono">
+                                </div>
+                                <div class="mb-2 col-12 col-md-6">
+                                    <label for="pais" class="form-label">pais</label>
+                                    <input type="email" class="form-control" id="pais">
+                                </div>
+                                <div class="mb-2 col-12 col-md-6">
+                                    <label for="imagen" class="form-label">Imagen</label>
+                                    <input type="email" class="form-control" id="imagen">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary " id="saveChanges">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

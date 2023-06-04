@@ -16,3 +16,9 @@
 .card-hover:hover .edit{
     display: block;
 }
+
+.custom-btn-edit{
+    color: white;
+    top: -10px;
+    left: -10px;
+}
